@@ -38,7 +38,6 @@
 
 ## Requirements
 
-- [Go 1.22+](https://go.dev/dl/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) in PATH (used for video downloads)
 - [FFmpeg](https://ffmpeg.org/) in PATH (used by yt-dlp to merge video and audio streams)
 - [Google Chrome](https://www.google.com/chrome/) (required only for **Thinkific** login)
